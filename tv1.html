@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TV1 DERNIÈRE +</title>
+    <style>
+        body {
+            margin: 0;
+            background: linear-gradient(90deg, #0044CC, #FF0000);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+
+        .logo {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 150px;
+        }
+
+        .video-container {
+            width: 80%;
+            max-width: 800px;
+            aspect-ratio: 16/9;
+            background: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        video {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <img src="TV1.png" alt="TV1 Logo" class="logo"> <!-- 🖼️ Affichage du logo TV1 -->
+    
+    <div class="video-container">
+        <video id="liveStream" controls autoplay>
+            <source src="rtmp://b.rtmp.youtube.com/live2?backup=1" type="video/mp4"> <!-- 🔗 RTMP YouTube Live -->
+            Votre navigateur ne supporte pas la vidéo.
+        </video>
+    </div>
+
+</body>
+</html>
